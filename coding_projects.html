@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>    
+    MathJax = 
+    {
+        tex:
+        {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+    };
+    </script>
+
+</head>
+
+<body>
+    <a href="./index.html">Home</a>
+    <br><a href="./about.html">About</a>
+    <br><a href="./coding_projects.html">Coding projects</a>
+
+    <h1 class="black_centre">Tim's Website</h1>
+    <br><h3 class="blue_centre">Coding Projects</h2>    
+    
+    <h4 class="blue_centre">Mandlebrot set zoom</h4>
+    <img class="img_sqr" src="./images_gifs/mandlebrot_circles.png" alt="mandlebrot_circles" /> 
+    <figcaption>Fig.1 The Mandlebrot set. Every value outside the smooth circular shapes will tend towards infinity.</figcaption>
+    <p>
+        Below is the iterative system behind the Mandlebrot set.
+        \[z_0 = 0 \]
+        \[ z_n := z_{n-1}^2+c \quad \text{for} \; z_n, \; c \, \in \mathbb{C}\]
+        Where \(\mathbb{C}\) is the set of complex numbers and \(n\) is a natural number. 
+        <br> The Mandlebrot set is defined to be
+         \[M=\{c \in \mathbb{C} : |z_n|^2 \ngeq 4\ \text{for all} \; n \in \mathbb{N}\}\]
+         Fig.1 demonstrates the circle with radius 2 which if \(z_n\) is not inside the circle then \(z_n \to \infty\) as \(n\to\infty\)
+    </p>
+    
+    <img class="img_sqr" src="./images_gifs/mandlebrot_plot.gif" alt="mandlebrot_zoom" />
+    <figcaption>Fig.2 Zooming in on the Mandlebrot set at point: \(c\approx-0.776 + 0.136i\).</figcaption>
+    <p>
+
+        The animation shows how many iterations (using colour) it takes to escape set: \(|z_n|^2>4\). So I set:
+         \[\text{Colour}=\frac{n_\text{escape}}{n_\text{max}}\]
+        I also added zooming and rotation to the animation. 
+        Zooming is tricky because you need to increase the maximum number of iterations as you zoom to retain detail. However, if you increase it too much a lot of pixels have the same colour (because more pixels are escaping).
+        I worked out good values by trial and error but if I wanted to do a huge zoom I would.
+    </p>
+
+
+    <h4 class="blue_centre">Raytracing a teapot</h4>
+    <img class="img_screen" src="./images_gifs/photon_test4.png" alt="raytracing" />
+
+</body>
+
+</html>

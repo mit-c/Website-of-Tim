@@ -1,0 +1,65 @@
+body 
+{
+  background-color: rgb(201, 240, 247);
+  font-family: "Open Sans"
+}
+
+.black_centre
+{
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.blue_centre
+{
+  color: rgb(35, 2, 124);
+  text-align: center;
+  margin-bottom: 0%;
+  font-weight: bolder;
+}
+
+p 
+{
+  color: rgb(0, 0, 0);
+  text-align: left;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.img_sqr
+{
+  display: block;
+  border: 0px solid white;
+  border-radius: 0px;
+  padding: 0px;
+  background-color: rgb(201, 240, 247);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 371px;
+  height: 371px;
+}
+
+.img_screen
+{
+  display: block;
+  border: 0px solid white;
+  border-radius: 0px;
+  padding: 0px;
+  background-color: blue;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 75%;
+  height: 75%;
+}
+
+
+figcaption
+{
+  margin-left: 185px;
+  margin-right: 185px;
+  font-size: 80%;
+}
